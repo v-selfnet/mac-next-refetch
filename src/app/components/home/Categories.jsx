@@ -1,26 +1,24 @@
+import SingleCategory from "@/app/components/home/SingleCategory";
 import getCategories from "@/app/utils/getCategories";
-import Image from "next/image";
 
+import Link from "next/link";
 
 const Categories = async () => {
     const categories = await getCategories();
+    
+
     return (
         <div>
-            {categories.length}
-            {
-                categories.map(({ id, name, imageurl }) => <div
-                    key={id}
-                    className="card w-96 bg-base-100 shadow-xl">
-                    <img src={imageurl} alt="Loading..." />
-                    <div className="card-body">
-                    <div className="badge badge-secondary">{id}</div>
-                        <h2 className="card-title">{name}</h2>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Detail</button>
-                        </div>
-                    </div>
-                </div>)
-            }
+            <h1>Total Category: {categories.length}</h1>
+            <div>
+                {
+                    categories.map(category => <SingleCategory
+                        key={category.id}
+                        category={category}
+                    ></SingleCategory>)
+
+                }
+            </div>
         </div>
     );
 };
