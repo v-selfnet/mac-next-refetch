@@ -1,0 +1,69 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Electronics",
+            "imageurl": "https://i.ibb.co/Zx3D09d/Electronics.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Clothings",
+            "imageurl": "https://i.ibb.co/6XtVFcW/Clothes.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Books",
+            "imageurl": "https://i.ibb.co/6XtVFcW/Clothes.jpg"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "title": "iPhone",
+            "price": 999,
+            "categoryId": 1,
+            "imageurl": "https://i.ibb.co/6XtVFcW/Clothes.jpg",
+            "features": ["A", "B", "C", "D"]
+        },
+        {
+            "id": 2,
+            "title": "Samsung",
+            "price": 965,
+            "categoryId": 1,
+            "imageurl": "https://i.ibb.co/6XtVFcW/Clothes.jpg",
+            "features": ["A", "B", "C", "D"]
+        },
+        {
+            "id": 3,
+            "title": "T-Shirt",
+            "price": 99,
+            "categoryId": 2,
+            "imageurl": "https://i.ibb.co/6XtVFcW/Clothes.jpg",
+            "features": ["A", "B", "C", "D"]
+        },
+        {
+            "id": 4,
+            "title": "Pants",
+            "price": 95,
+            "categoryId": 2,
+            "imageurl": "https://example.com/clothes.jpg",
+            "features": ["A", "B", "C", "D"]
+        },
+        {
+            "id": 5,
+            "title": "English",
+            "price": 99,
+            "categoryId": 3,
+            "imageurl": "https://i.ibb.co/6XtVFcW/Clothes.jpg",
+            "features": ["A", "B", "C", "D"]
+        },
+        {
+            "id": 6,
+            "title": "Babgla",
+            "price": 95,
+            "categoryId": 3,
+            "imageurl": "https://i.ibb.co/6XtVFcW/Clothes.jpg",
+            "features": ["A", "B", "C", "D"]
+        }
+    ]
+}
