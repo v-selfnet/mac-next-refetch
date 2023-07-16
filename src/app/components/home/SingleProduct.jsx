@@ -1,12 +1,14 @@
 import Link from 'next/link';
-import React from 'react';
 
-const SingleProduct = ({product}) => {
-    const {id, title} = product;
+const SingleProduct = ({ product }) => {
+    const { id, title, imageurl } = product;
     return (
-        <div>
-           
-            <Link href={`/products/${id}`}>{title}</Link>
+        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <img className="rounded-t-2xl"src={imageurl} alt="Loading..." />
+            <div className="card-body">
+                <h2 className="card-title">{title}</h2>
+                <Link href={`/products/${id}`} className='btn btn-primary btn-wide mx-auto'>Detail</Link>
+            </div>
         </div>
     );
 };

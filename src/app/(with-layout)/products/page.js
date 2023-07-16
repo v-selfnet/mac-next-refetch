@@ -7,12 +7,14 @@ const ProductsPage = async ({ searchParams }) => {
     return (
         <div>
             <h1>Total Products: {products.length}</h1>
-            {
-                products.map(product => <SingleProduct
-                    key={product.id}
-                    product={product}
-                ></SingleProduct>)
-            }
+            <div className='grid grid-cols-3 gap-4'>
+                {
+                    products.map(product => <SingleProduct
+                        key={product.id}
+                        product={product}
+                    ></SingleProduct>)
+                }
+            </div>
         </div>
     );
 };
